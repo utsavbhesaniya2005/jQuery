@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>slick-swiper</title>
+        <link rel="stylesheet" href="./css/slick-slider.css">
+    </head>
+    <style>
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 25px;
+        }
+    </style>
+    <body>
+        <div class="your-class">
+            <div><img src="https://source.unsplash.com/random/1550x650" alt=""></div>
+            <div><img src="https://source.unsplash.com/random/1550x650?2" alt=""></div>
+            <div><img src="https://source.unsplash.com/random/1550x650?3" alt=""></div>
+            <div><img src="https://source.unsplash.com/random/1550x650?4" alt=""></div>
+            <div><img src="https://source.unsplash.com/random/1550x650?5" alt=""></div>
+            <div><img src="https://source.unsplash.com/random/1550x650?6" alt=""></div>
+          </div>
+
+    <script src="./js/jquery-min.js"></script>
+    <script src="./js/slick-slider-min.js"></script>
+
+    <script>
+        
+        $(document).ready(function(){
+            $('.your-class').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                
+            });
+        });
+    </script>
+    </body>
+</html>
